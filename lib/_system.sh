@@ -122,9 +122,8 @@ configurar_bloqueio() {
 
   sleep 2
 
-sudo su - deploy <<EOF
- pm2 stop ${empresa_bloquear}-backend
- pm2 save
+  sudo su - deploy <<EOF
+  git clone https://github.com/Neidson-DEV/INSTALADOR.git /home/deploy/whaticket/
 EOF
 
   sleep 2
